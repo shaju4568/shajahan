@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form method="POST">
+  {% csrf_token %}
+  <p style="font-size:18px;color:#333;margin-bottom:20px;" class="confirmation-message">Are you sure you want to delete?</p>
+  <button style="background-color:#04AA6D;border:none;color:white;padding:15px 31px;text-decoration:none;margin:4px 2px;cursor:pointer;border-radius:5px;" type="submit" class="delete-button">Delete</button>
+</form>
+{% endblock %}
